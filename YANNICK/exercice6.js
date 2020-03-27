@@ -6,11 +6,11 @@ while(isNaN(num1) || num1=="") // Si la valeur entrer est une chaine de caractè
     alert("Vous n'avez pas entré de chiffre"); 
     var num1=prompt('Veuillez votre age');
  }
- while(num1>17) //Si la valeur est supérieur a 17 ans
+ while(num1>17 || isNaN(num1)) //Si la valeur est supérieur a 17 ans
  {
      alert("Désolé vous avez inserez une valeur supérieur a 17 ans");
      num1Convert=parseInt(num1);
-     alert(num1Convert);
+     alert("Vous avez inséré " + num1Convert);
      var num1=prompt('Veuillez entrer un age inférieur a 17 ans');
  }
 
